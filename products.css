@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:ital@1&family=Noto+Nastaliq+Urdu:wght@700&family=Roboto:ital@1&family=Ubuntu:ital@1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --font1: 'Lobster', cursive;
+    --font2: 'Ubuntu', sans-serif;
+}
+
+
+.pro h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 32px;
+    font-family: var(--font1);
+    font-weight: lighter;
+}
+.prosec{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20vw, 0fr));
+    grid-gap: 0px;
+    /* margin-top: 13px; */
+    margin-bottom: 80px;
+    margin-left: 23px;
+    overflow: hidden;
+    justify-content: center;
+    align-content: center;
+    height: 40vw;
+    
+}
+.fruitsec{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20vw, 0fr));
+    grid-gap: 0px;
+    /* margin-top: 13px; */
+    margin-bottom: 80px;
+    margin-left: 23px;
+    overflow: hidden;
+    justify-content: center;
+    align-content: center;
+    height: 60vw;
+    
+}
+
+.fruitsec img{
+    overflow: hidden;
+width : 15vw;
+height : 15vw;
+
+padding: 12px;
+}
+.prosec img{
+    overflow: hidden;
+width : 15vw;
+height : 15vw;
+
+padding: 12px;
+}
+.prosec_purchasing{
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+    margin-top: -92px;
+    top: 50%;
+    position: sticky;
+    right: 53%;
+}
+@media only screen and (max-width: 1180px)
+{
+    .mainmenu2{
+        position: absolute;
+    /* top: 8%; */
+    left: 0;
+    width: 99%;
+    background-color: #81daf3;
+    padding: 7px;
+    transition: right 0.3s ease-in-out;
+    height: 126px;
+    }
+    .pro h2{
+      
+        margin-top: 84px;
+        /* font-size: 18px; */
+        width: 656px;
+        margin-left: 157px;
+        font-size: 46px;
+        
+    }
+    .prosec_purchasing
+        {
+            margin-top: -37px;
+          display: flex;
+          flex-direction: column;
+      }
+        
+        
+          .cart,
+          .Wishlist,
+          .buy {
+           
+    font-size: 16px;
+    padding: 7px 37px;
+    width: 22%;
+    left: 382px;
+    position: relative;
+    /* right: 59px; */
+    margin-bottom: 23px;
+        }
+          
+    }
+@media only screen and (max-width: 880px)
+{
+    .mainmenu2{
+        position: absolute;
+    /* top: 8%; */
+    left: 0;
+    width: 99%;
+    background-color: #81daf3;
+    padding: 7px;
+    transition: right 0.3s ease-in-out;
+    height: 126px;
+    }
+    .prosec{
+        height: 63vw;
+    }
+    .pro h2{
+       
+        margin-top: 84px;
+        /* font-size: 18px; */
+        width: 414px;
+        margin-left: 78px;
+        font-size: 36px;
+        
+    }
+    .prosec_purchasing
+        {
+            margin-top: -37px;
+          display: flex;
+          flex-direction: column;
+      }
+        
+        
+          .cart,
+          .Wishlist,
+          .buy {
+           
+            padding: 19px 37px;
+            width: 40%;
+            left: 108px;
+            position: relative;
+            top: -45px;
+            font-size: 16px;
+        }
+        
+        /* .footer2{
+            margin-top: 563px;
+        } */
+          
+    }
+@media only screen and (max-width: 450px)
+{
+    .pro{
+        margin-top: 156px;
+    }
+    .mainmenu2{
+        position: absolute;
+        top :11%;
+    left: 0;
+    width: 99%;
+    background-color: #81daf3;
+    padding: 7px;
+    transition: right 0.3s ease-in-out;
+    height: 200px;
+    }
+    .prosec{
+        /* height: 104vw; */
+        margin-bottom: unset;
+    }
+    .pro h2{
+       
+        margin-top: 84px;
+        /* font-size: 18px; */
+        width: 284px;
+        margin-left: 60px;
+        font-size: 22px;
+    }
+    .prosec img{
+       margin-top :23px;
+       width: 16vw;
+    height: 19vw;
+    }
+    .prosec_purchasing
+        {
+            margin-top: 15px;
+            display: flex;
+            flex-direction: column;
+            height: 33px;
+      }
+        
+        
+          .cart,
+          .Wishlist,
+          .buy {
+           
+            padding: 19px 37px;
+            width: 40%;
+            left: 108px;
+            position: relative;
+            top: 175px;
+            font-size: 16px;
+        }
+        
+        /* .footer2{
+            margin-top: 563px;
+        } */
+        .footer2{
+            margin-top: 632px;
+        }  
+    }
+
+    
+
+
+

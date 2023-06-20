@@ -1,0 +1,2199 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:ital@1&family=Noto+Nastaliq+Urdu:wght@700&family=Roboto:ital@1&family=Ubuntu:ital@1&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --font1: 'Lobster', cursive;
+  --font2: 'Ubuntu', sans-serif;
+}
+
+body {
+  /* overflow: hidden; */
+
+}
+
+header {
+  /* position: sticky; */
+  top: 0;
+  background-color: white;
+  z-index: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* margin-top: 12px; */
+  padding: 0 20px;
+  cursor: pointer;
+  box-shadow: 0px 10px 3px -6px rgba(0, 0, 0, 0.2);
+  /* padding-top: 12px; */
+  font-size: 16px;
+}
+
+.show {
+  display: block;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+a.icon {
+
+  color: black;
+  display: block;
+  position: absolute;
+  right: 0%;
+  top: 20%;
+}
+
+a:hover {
+  color: black;
+}
+
+.mainmenu {
+  display: flex;
+  position: absolute;
+  left: 14%;
+  margin-top: 3px;
+  font-size: 16px;
+}
+.mainmenu {
+  display: flex;
+}
+
+.mainmenu.show {
+  display: none;
+  flex-direction: row;
+}
+
+.mainmenu.show .center {
+  display: block;
+}
+
+.mainmenu.show .dropdown {
+  display: block;
+}
+
+.mainmenu.show .dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: white;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px;
+}
+
+.mainmenu.show .dropdown-content li a {
+  min-width: 175px;
+}
+
+.mainmenu.show .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: white;
+  min-width: 375px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px;
+
+}
+.dropdown-content li a {
+ 
+  min-width: 175px;
+  
+
+}
+
+.dropbtn {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  margin: 12px 7px;
+  padding: 6px;
+  font-size: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.nav a {
+  font-size: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.left span {
+  font-family: var(--font1);
+  margin: 0 12px;
+  padding: 0 12px;
+  font-size: 33px;
+}
+.left img{
+  width : 193px;
+  height : 83px
+}
+.left {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+
+.center {
+  font-size: 10px;
+}
+
+.center ul li {
+  padding: 0;
+  list-style: none;
+  font-size: 16px;
+  
+  margin-right: 22px;
+  margin-top: 16px;
+}
+.center ul li a{
+  
+  font-size: 23px;
+  
+
+}
+.center2 ul li{
+  display :none;
+}
+
+.btn {
+  margin: 6px 7px;
+  padding: 6px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: black;
+  font-size: 16px;
+}
+
+#signup {
+  background-color: #e93b30;
+  color: white;
+  font-size: 16px;
+  margin: 0 8px;
+  padding: 9px;
+  border: 2px solid white;
+  border-radius: 9px;
+  
+}
+.center ul li a, .dropdown button
+{
+
+  left: 192px;
+  font-weight: normal;
+  position: relative;
+  font-style: unset;
+ 
+
+}
+ .dropdown button
+{
+font-size: 20px;
+
+}
+.rightbtn button, i{
+  display: none;
+}
+.rightbtn i{
+  display: none;
+}
+
+.left span , .center ul li a , .dropdown,.right button{
+  /* margin-bottom: 8px; */
+}
+
+
+
+.hamburger {
+  font-size: 25px;
+  cursor: pointer;
+  display: none;
+}
+.imgsize img{
+  width: 59px;
+  height: 23px;
+  left: 7%;
+  rotate: 45;
+  transform: rotate(19deg);
+  position: absolute;
+  top: 16%;
+}
+.img-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+.apple {
+  width: 43px;
+    height: 45px;
+    position: absolute;
+    top: 47%;
+    /* left: 35%; */
+    transform: rotate(-10deg);
+    opacity: 0.3;
+    right: 166%;
+}
+.choclate {
+  width: 43px;
+    height: 45px;
+    position: absolute;
+    /* top: 82%; */
+    /* left: 35%; */
+    transform: rotate(-10deg);
+    opacity: 0.5;
+    right: 583px
+    
+}
+.milk {
+ 
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 200px;
+    /* left: 35%; */
+    transform: rotate(-20deg);
+    opacity: 0.4;
+    right: 633px;
+}
+.icecream {
+  width: 33px;
+    height: 30px;
+    position: absolute;
+    top: 575px;
+    /* left: 35%; */
+    transform: rotate(-10deg);
+    opacity: 0.5;
+    right: 605px;
+}
+.tomato {
+  width: 43px;
+    height: 45px;
+    position: absolute;
+    top: 73%;
+    /* left: 35%; */
+    transform: rotate(-30deg);
+    opacity: 0.3;
+    right: 766%;
+}
+.chips {
+  width: 40px;
+    height: 35px;
+    position: absolute;
+    top: 53%;
+    /* left: 35%; */
+    transform: rotate(-40deg);
+    opacity: 0.3;
+    right: 466%;
+}
+.grapes {
+  width: 43px;
+    height: 45px;
+    position: absolute;
+    top: 27%;
+    /* left: 35%; */
+    transform: rotate(-10deg);
+    opacity: 0.3;
+    right: 266%;
+}
+.capsicum {
+  width: 43px;
+  height: 35px;
+  position: absolute;
+  top: 30%;
+  /* left: 35%; */
+  transform: rotate(-60deg);
+  opacity: 0.3;
+  right: 800%;
+}
+.garlic{
+  width: 73px;
+  height: 55px;
+  position: absolute;
+  top: 155px;
+  /* left: 35%; */
+  transform: rotate(-10deg);
+  opacity: 0.7;
+  right: 539px;
+}
+
+.potato {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 212px;
+  /* left: 35%; */
+  transform: rotate(-20deg);
+  opacity: 0.4;
+  right: 537%;
+}
+
+
+
+
+.banana {
+  width: 60px;
+  height: 60px;
+  /* position: absolute; */
+  top: -7%;
+  /* left: -141%; */
+  transform: rotate(20deg);
+  position: relative;
+  right: 470%;
+  opacity: 0.4;
+}
+
+
+.peas{
+  width: 62px;
+  height: 60px;
+  position: absolute;
+  top: 50%;
+  /* left: 24%; */
+  transform: rotate(-30deg);
+  right: 742%;
+  opacity: 0.5;
+}
+.cheese {
+  width: 50px;
+  height: 40px;
+  position: absolute;
+  top :519px;
+  /* left: 24%; */
+  transform: rotate(-60deg);
+  right: 490%;
+  opacity: 0.6;
+}
+
+
+
+
+
+
+.videosec {
+  /* height: 40vw; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 20px;
+  position: sticky;
+  height: 40vw;
+  /* background-color: #f7f2f3; */
+
+
+
+}
+
+.rightsecpic img {
+
+  width: 44vw;
+  position: absolute;
+  left: 52%;
+  top: 12%;
+  height: 30vw;
+  border-radius: 12px;
+}
+
+
+.video {
+
+  width: 70vw;
+  height: 40vw;
+  opacity: 0.2
+}
+
+
+.content {
+  /* display: flex; */
+  position: absolute;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+  top: 41%;
+  left: 24%;
+  justify-content: center;
+  padding-top: 20px;
+  width: 35vw;
+}
+
+.content h2 {
+  margin-top: 8px;
+  margin-bottom: 5px;
+  font-family: var(--font1);
+  font-weight: lighter;
+  font-size: 25px;
+
+}
+
+.content p {
+  font-family: var(--font2);
+  margin-bottom: 12px;
+  font-size: 10px;
+
+}
+
+.searchbar {
+
+  position: absolute;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+  top: 58%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 25%;
+  /* margin-top: 43px; */
+}
+
+.searchbar input {
+  background: url(/img/icon.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 20px 20px;
+  background-position: left 10px center;
+  margin: 12px;
+  font-size: 12px;
+  width: 34vw;
+  padding: 10px 10px 10px 40px;
+  /* add left padding of 40px */
+  border: 2px solid white;
+  border-radius: 28px;
+  background-color: #e93b30;
+  color: white;
+  font-weight: bold;
+  margin-top: 250px;
+  margin-bottom: 150px;
+}
+
+.searchbar input::placeholder {
+  color: white
+    /* set placeholder text color to red */
+}
+
+.purchasing {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-top: -92px;
+
+}
+
+.cart {
+  background: url(/img/cart.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 20px 20px;
+  background-position: left 10px center;
+  margin-top: 43px;
+  margin: 12px;
+  font-size: 10px;
+  /* background-color: white; */
+  width: 10vw;
+  padding: 7px 20px 7px 20px;
+
+  border-radius: 28px;
+  color: black;
+  font-weight: bold;
+  width: 13vw;
+}
+
+.Wishlist {
+  background: url(/img/wishlist.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 20px 20px;
+  background-position: left 10px center;
+  margin-top: 43px;
+  margin: 10px;
+  font-size: 10px;
+  /* background-color: white; */
+  width: 10vw;
+  padding: 7px 20px 7px 27px;
+
+  border-radius: 28px;
+  color: black;
+  font-weight: bold;
+  width: 13vw;
+}
+
+.buy {
+  background: url(/img/buy.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 20px 20px;
+  background-position: left 10px center;
+  margin-top: 43px;
+  margin: 12px;
+  font-size: 10px;
+  /* background-color: white; */
+  width: 10vw;
+  padding: 7px 20px 7px 20px;
+  /* decrease right padding value */
+
+  border-radius: 28px;
+  color: black;
+  font-weight: bold;
+  width: 13vw;
+
+
+}
+
+
+.products {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  /* margin-top: 100px; */
+}
+
+.productss h1 {
+  font-size: 25px;
+}
+
+
+.categories {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  position: sticky;
+  
+
+}
+
+
+.category {
+  margin-top: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.category img {
+  width: 20vw;
+  height: 15vw;
+  opacity: 0.4;
+
+}
+
+.category a {
+  color: #000;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bolder;
+  text-align: center;
+  margin-top: 34px;
+}
+
+.category a:hover {
+  color: #f00;
+}
+
+#dairy {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+  top: 25%;
+  left: 50%;
+  justify-content: center;
+  padding-top: 20px;
+
+}
+
+
+
+#fruits {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+  top: 25%;
+  left: 50%;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+#vegetables {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+  top: 25%;
+  left: 50%;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+#snacks {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+  top: 25%;
+  left: 50%;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+/* .products-container {
+    display : flex;
+    margin-top: 20px;
+}
+
+.products-container ul li {
+     
+   list-style: none;
+   margin : 12px;
+   padding : 12px;
+  }
+  .items{
+    border : 2px solid black;
+  } */
+.slideshow {
+  position: relative;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.slideshow h2 {
+  margin: 12px;
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+
+}
+
+.slide-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.slide-container img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 23px;
+  height: 20vw;
+  width: 15vw;
+}
+
+.slide {
+  animation: slide 8s infinite;
+  width: 100%;
+}
+
+
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+
+  20% {
+    transform: translateX(-50%);
+  }
+
+  25% {
+    transform: translateX(-100%);
+  }
+
+  50% {
+    transform: translateX(-150%);
+  }
+
+  75% {
+    transform: translateX(-200%);
+  }
+
+
+  100% {
+    transform: translateX(-250%);
+  }
+}
+
+.footer {
+  background-color: #e93b30;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.social-icons a {
+  color: black;
+  margin-right: 20px;
+  position: relative;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.social-icons a:hover .icon-name {
+  display: block;
+}
+
+.icon-name {
+  display: none;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgb(250, 228, 228);
+  color: black;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.copy-right {
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  color: black;
+}
+
+
+
+
+@media only screen and (max-width: 1180px) {
+  header {
+
+    box-shadow: 0px 10px 3px -6px rgba(0, 0, 0, 0.2);
+    /*position: sticky; */
+  }
+
+  .nav {
+    display: flex;
+    /* flex-direction: column; */
+  }
+
+  .left {
+    font-weight: bold;
+    justify-content: center;
+  }
+  .left img{
+    width: 220px;
+    height: 86px;
+  }
+  .mainmenu.hide-items ul.show {
+    display: none;
+  }
+  .mainmenu.show {
+    display: flex;
+    flex-direction: column;
+  }
+ 
+
+
+  .center ul {
+    display: none;
+  }
+
+  .center ul li {
+    margin-top: 12px;
+    margin-right: 5px;
+    font-size: 10px;
+  }
+  .center ul li a, .dropdown button {
+    left: 0px;
+   
+}
+.center ul li a {
+  font-size: 12px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.center2 ul li{
+  display :flex;
+}
+.dropdown button {
+  font-size: 17px;
+  margin-bottom: -8px;
+  margin-top: 12px;
+  font-weight: bold;
+}
+  .dropdown {
+    display: none;
+    margin-top: -3px
+  }
+
+  .dropbtn {
+    margin: 3px 7px;
+  }
+
+
+.hamburger {
+  font-size: 25px;
+  cursor: pointer;
+  display: block;
+  /* margin-left: 528px; */
+  z-index: 1;
+ position: absolute;
+ right: 59px;
+}
+
+.hamburger span {
+  display: block;
+  position: absolute;
+  height: 3px;
+ width :40px;
+  background-color: black;
+}
+
+.hamburger span:nth-child(1) {
+  top: -5px;
+}
+
+.hamburger span:nth-child(2),
+.hamburger span:nth-child(3) {
+  top: -18px;
+}
+
+.hamburger span:nth-child(3) {
+ 
+  top: 9px;
+}
+
+.hamburger.drop span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.hamburger.drop span:nth-child(2) {
+  transform: scaleX(0);
+}
+
+.hamburger.drop span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+  .mainmenu {
+    z-index: 1;
+    display: none;
+    position: absolute;
+    top: 84px;
+    left: 0;
+    width: 99%;
+    background-color: #81daf3;
+    padding: 7px;
+    transition: right 0.3s ease-in-out;
+    height: 196px;
+
+  }
+
+  .mainmenu.hide-items ul.show {
+    display: none;
+  }
+
+  .mainmenu.hide-items .center ul {
+    display: none;
+  }
+
+  .mainmenu.hide-items .center ul li {
+    margin-top: 0;
+    margin-right: 5px;
+    font-size: 10px;
+  }
+
+  .mainmenu.hide-items .center ul li a,
+  .mainmenu.hide-items .dropdown button {
+    left: 0;
+  }
+
+  .mainmenu.hide-items .dropdown {
+    display: none;
+    margin-top: -3px;
+  }
+  .dropdown-content {
+ min-width: 282px;
+   
+}
+  .right {
+    display: flex;
+    /* flex-direction: column; */
+  }
+
+  .right i {
+   display: none;
+
+  }
+  .rightsecpic img {
+    width: 49vw;
+    position: absolute;
+    left: 15%;
+    top: -4%;
+    border-radius: 12px;
+    position: relative;
+    top: -1%;
+    opacity: 0.3;
+    height: 60vw;
+    display :none;
+    
+}
+
+.content {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+  top: 49%;
+  left: 45%;
+  justify-content: center;
+  padding-top: 20px;
+  width: 42vw;
+  font-weight: unset;
+}
+
+  .show {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .show .dropdown {
+    display: block;
+  }
+  .right button{
+    display: none;
+  }
+  .right i{
+    display: none;
+  }
+
+  .videosec {
+  
+    background: url(https://img.freepik.com/free-photo/shopping-cart-filled-with-coins-copy-space-background_23-2148305919.jpg?w=996&t=st=1687009066~exp=1687009666~hmac=1f8bc27…);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 615px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* z-index: -1; */
+}
+  
+
+.img-container img {
+ display :none
+} 
+.searchbar{
+  top :30%;
+  left : 52%;
+}
+.searchbar input{
+  width: 97%;
+  margin-left: -61px;
+  border-radius: 10px;
+}
+.tomato, .milk , .icecream , .choclate, .chips{
+  display :none;
+}
+  .content h2 {
+    font-size: 22px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  .purchasing {
+    margin-top: -37px;
+    display: flex;
+  }
+
+  .productss h1 {
+    font-size: 45px;
+  }
+
+  .slideshow h2 {
+    font-size: 45px;
+  }
+  .rightbtn button{
+    display :flex;
+  }
+  .rightbtn i {
+    display: flex;
+  }
+  .btn1{
+    position: relative;
+    top: 102px;
+    width: 60px;
+    height: 34px;
+    color: black;
+    /* left: 180px; */
+    background-color: #e93b30;
+    font-size: 12px;
+    margin: 0 8px;
+    border: 2px solid white;
+    border-radius: 9px;
+    z-index: 1;
+    padding: 8px 10px;
+    right: 76px;
+    color: white;
+}
+
+   
+
+  
+  .btn1:hover{
+    
+    color :#e93b30;
+}
+  
+  #signup1 {
+    position: absolute;
+    width: 66px;
+    height: 34px;
+    color: black;
+    background-color: #e93b30;
+    font-size: 12px;
+    margin: 0 8px;
+    border: 2px solid white;
+    border-radius: 9px;
+    z-index: 1;
+    padding: 8px 10px;
+    /* right: 531px; */
+    color: white;
+    top: 64%;
+}
+
+    
+
+.rightbtn a{
+  text-decoration: none;
+}
+
+
+  .cart,
+  .Wishlist,
+  .buy {
+    font-size: 10px;
+    padding: 0px 39px;
+    width: 30%;
+  }
+
+  #dairy,
+  #fruits,
+  #vegetables {
+    top: 96%;
+    font-size: 28px;
+  }
+
+  .footer {
+    flex-direction: column;
+    height: 112px;
+  }
+
+  .social-icons {
+    margin-bottom: 12px;
+  }
+  .social-icons a {
+    font-size: 28px;
+  }
+  .categories{
+    flex-direction: column;
+
+  }
+  .category img{
+    width: 88vw;
+    height: 75vw;
+    opacity: unset;
+  }
+  .slide-container img{
+    height: 68vw;
+    width: 73vw;
+}
+.copy-right{
+  font-size: 30px;
+}
+  }
+@media only screen and (max-width: 860px) {
+  header {
+
+    box-shadow: 0px 10px 3px -6px rgba(0, 0, 0, 0.2);
+    /*position: sticky; */
+  }
+
+  .nav {
+    display: flex;
+    /* flex-direction: column; */
+  }
+
+  .left {
+    font-weight: bold;
+    justify-content: center;
+  }
+  .left img{
+    width: 220px;
+    height: 86px;
+  }
+  .mainmenu.hide-items ul.show {
+    display: none;
+  }
+  .mainmenu.show {
+    display: flex;
+    flex-direction: column;
+  }
+ 
+
+
+  .center ul {
+    display: none;
+  }
+
+  .center ul li {
+    margin-top: 12px;
+    margin-right: 5px;
+    font-size: 10px;
+  }
+  .center ul li a, .dropdown button {
+    left: 0px;
+   
+}
+.center ul li a {
+  font-size: 12px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.center2 ul li{
+  display :flex;
+}
+.dropdown button {
+  font-size: 17px;
+  margin-bottom: -8px;
+  margin-top: 12px;
+  font-weight: bold;
+}
+  .dropdown {
+    display: none;
+    margin-top: -3px
+  }
+
+  .dropbtn {
+    margin: 3px 7px;
+  }
+
+
+.hamburger {
+  font-size: 25px;
+  cursor: pointer;
+  display: block;
+  /* margin-left: 528px; */
+  z-index: 1;
+ position: absolute;
+ right: 59px;
+}
+
+.hamburger span {
+  display: block;
+  position: absolute;
+  height: 3px;
+ width :40px;
+  background-color: black;
+}
+
+.hamburger span:nth-child(1) {
+  top: -8px;
+}
+
+.hamburger span:nth-child(2),
+.hamburger span:nth-child(3) {
+  /* top: 50%;
+  margin-top: -1px; */
+}
+
+.hamburger span:nth-child(3) {
+ 
+  top: 3px;
+}
+
+.hamburger.drop span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.hamburger.drop span:nth-child(2) {
+  transform: scaleX(0);
+}
+
+.hamburger.drop span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+  .mainmenu {
+    z-index: 1;
+    display: none;
+    position: absolute;
+    top: 83px;
+    left: 0;
+    width: 98%;
+    background-color: #81daf3;
+    padding: 7px;
+    transition: right 0.3s ease-in-out;
+    height: 194px;
+  }
+
+  .mainmenu.hide-items ul.show {
+    display: none;
+  }
+
+  .mainmenu.hide-items .center ul {
+    display: none;
+  }
+
+  .mainmenu.hide-items .center ul li {
+    margin-top: 0;
+    margin-right: 5px;
+    font-size: 10px;
+  }
+
+  .mainmenu.hide-items .center ul li a,
+  .mainmenu.hide-items .dropdown button {
+    left: 0;
+  }
+
+  .mainmenu.hide-items .dropdown {
+    display: none;
+    margin-top: -3px;
+  }
+  .dropdown-content {
+    min-width: 282px;
+      
+   }
+  .right {
+    display: flex;
+    /* flex-direction: column; */
+  }
+
+  .right i {
+   display: none;
+
+  }
+  .rightsecpic img {
+    width: 49vw;
+    position: absolute;
+    left: 15%;
+    top: -4%;
+    border-radius: 12px;
+    position: relative;
+    top: -1%;
+    opacity: 0.3;
+    height: 60vw;
+    display :none;
+    
+}
+
+.content {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+  top: 56%;
+  left: 45%;
+  justify-content: center;
+  padding-top: 20px;
+  width: 42vw;
+  font-weight: unset;
+}
+
+  .show {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .show .dropdown {
+    display: block;
+  }
+  .right button{
+    display: none;
+  }
+  .right i{
+    display: none;
+  }
+
+  .videosec {
+  
+    background: url(https://img.freepik.com/free-photo/shopping-cart-filled-with-coins-copy-space-background_23-2148305919.jpg?w=996&t=st=1687009066~exp=1687009666~hmac=1f8bc27…);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 615px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* z-index: -1; */
+}
+  
+
+.img-container img {
+ display :none
+} 
+.searchbar{
+  top :30%;
+  left : 52%;
+}
+.searchbar input{
+  width: 97%;
+  margin-left: -61px;
+  border-radius: 10px;
+}
+.tomato, .milk , .icecream , .choclate, .chips{
+  display :none;
+}
+  .content h2 {
+    font-size: 22px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* height: 33px;
+    width: 249px; */
+  }
+
+  .purchasing {
+    margin-top: -37px;
+    display: flex;
+  }
+
+  .productss h1 {
+    font-size: 45px;
+  }
+
+  .slideshow h2 {
+    font-size: 45px;
+  }
+  .rightbtn button{
+    display :flex;
+  }
+  .rightbtn i {
+    display: flex;
+  }
+  .btn1{
+    position: relative;
+    top: 148px;
+    width: 60px;
+    height: 34px;
+    color: black;
+    /* left: 180px; */
+    background-color: #e93b30;
+    font-size: 12px;
+    margin: 0 8px;
+    border: 2px solid white;
+    border-radius: 9px;
+    z-index: 1;
+    padding: 8px 10px;
+    right: 76px;
+    color: white;
+}
+
+   
+
+  
+  .btn1:hover{
+    
+    color :#e93b30;
+}
+  
+  #signup1 {
+    position: absolute;
+    width: 66px;
+    height: 34px;
+    color: black;
+    background-color: #e93b30;
+    font-size: 12px;
+    margin: 0 8px;
+    border: 2px solid white;
+    border-radius: 9px;
+    z-index: 1;
+    padding: 8px 10px;
+    /* right: 531px; */
+    color: white;
+    top: 71%;
+}
+
+    
+
+.rightbtn a{
+  text-decoration: none;
+}
+
+
+  .cart,
+  .Wishlist,
+  .buy {
+    font-size: 10px;
+    padding: 0px 39px;
+    width: 30%;
+  }
+
+  #dairy,
+  #fruits,
+  #vegetables {
+    top: 96%;
+    font-size: 28px;
+  }
+
+  .footer {
+    flex-direction: column;
+    height: 112px;
+  }
+
+  .social-icons {
+    margin-bottom: 12px;
+  }
+  .social-icons a {
+    font-size: 28px;
+  }
+  .categories{
+    flex-direction: column;
+
+  }
+  .category img{
+    width: 88vw;
+    height: 75vw;
+    opacity: unset;
+  }
+  .slide-container img{
+    height: 68vw;
+    width: 73vw;
+}
+.copy-right{
+  font-size: 30px;
+}
+  }
+@media only screen and (max-width: 450px) {
+  header {
+
+    box-shadow: 0px 10px 3px -6px rgba(0, 0, 0, 0.2);
+    /*position: sticky; */
+  }
+
+  .nav {
+    display: flex;
+    /* flex-direction: column; */
+  }
+
+  .left {
+    font-weight: bold;
+    justify-content: center;
+  }
+  .mainmenu.hide-items ul.show {
+    display: none;
+  }
+  .mainmenu.show {
+    display: flex;
+    flex-direction: column;
+  }
+ 
+
+
+  .center ul {
+    display: none;
+  }
+
+  .center ul li {
+    margin-top: 12px;
+    margin-right: 5px;
+    font-size: 10px;
+  }
+  .center ul li a, .dropdown button {
+    left: 0px;
+   
+}
+.center ul li a {
+  font-size: 12px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.center2 ul li{
+  display :flex;
+}
+.dropdown button {
+  font-size: 17px;
+  margin-bottom: -8px;
+  margin-top: 12px;
+  font-weight: bold;
+}
+  .dropdown {
+    display: none;
+    margin-top: -3px
+  }
+
+  .dropbtn {
+    margin: 3px 7px;
+  }
+
+
+.hamburger {
+  font-size: 25px;
+  cursor: pointer;
+  display: block;
+  margin-left: 82px;
+  z-index: 1;
+  position: unset;
+}
+
+.hamburger span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 7%;
+  background-color: black;
+}
+
+.hamburger span:nth-child(1) {
+  top: 29px;
+}
+
+.hamburger span:nth-child(2),
+.hamburger span:nth-child(3) {
+  top: 36px;
+}
+
+.hamburger span:nth-child(3) {
+  /* top: auto;
+  bottom: 33px; */
+  top: 43px;
+}
+
+.hamburger.drop span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.hamburger.drop span:nth-child(2) {
+  transform: scaleX(0);
+}
+
+.hamburger.drop span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+  .mainmenu {
+    z-index: 1;
+    display: none;
+    position: absolute;
+    top: 77px;
+    left: 0;
+    width: 97%;
+    /* background-color: #857e7e; */
+    background-color: #85e1fb;
+    padding: 7px;
+    transition: right 0.3s ease-in-out;
+    height: 196px;
+  }
+
+  .mainmenu.hide-items ul.show {
+    display: none;
+  }
+
+  .mainmenu.hide-items .center ul {
+    display: none;
+  }
+
+  .mainmenu.hide-items .center ul li {
+    margin-top: 0;
+    margin-right: 5px;
+    font-size: 10px;
+  }
+
+  .mainmenu.hide-items .center ul li a,
+  .mainmenu.hide-items .dropdown button {
+    left: 0;
+  }
+
+  .mainmenu.hide-items .dropdown {
+    display: none;
+    margin-top: -3px;
+  }
+  .dropdown-content {
+    min-width: 282px;
+      
+   }
+  .right {
+    display: flex;
+    /* flex-direction: column; */
+  }
+
+  .right i {
+   display: none;
+
+  }
+  .rightsecpic img {
+    width: 49vw;
+    position: absolute;
+    left: 15%;
+    top: -4%;
+    border-radius: 12px;
+    position: relative;
+    top: -1%;
+    opacity: 0.3;
+    height: 60vw;
+    display :none;
+    
+}
+
+.content {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+  top: 47%;
+  left: 45%;
+  justify-content: center;
+  padding-top: 20px;
+  width: 42vw;
+  font-weight: unset;
+}
+
+  .show {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .show .dropdown {
+    display: block;
+  }
+  .right button{
+    display: none;
+  }
+  .right i{
+    display: none;
+  }
+
+  .videosec {
+    height: 74vw;
+    position: sticky;
+    background: url("https://img.freepik.com/free-photo/shopping-cart-filled-with-coins-copy-space-background_23-2148305919.jpg?w=996&t=st=1687009066~exp=1687009666~hmac=1f8bc271d9b966fffa209307faba5483f812cf28b126996d8328330af3c6d84d");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  /* z-index: -1; */
+  }
+
+.img-container img {
+ display :none
+} 
+.searchbar{
+  top :2%;
+  left : 52%;
+}
+.searchbar input{
+  width: 48%;
+  margin-left: -35px;
+  border-radius: 10px;
+}
+.tomato, .milk , .icecream , .choclate, .chips{
+  display :none;
+}
+  .content h2 {
+    font-size: 12px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: unset;
+    width: unset;
+  }
+
+  .purchasing {
+    margin-top: -37px;
+    display: flex;
+  }
+
+  .productss h1 {
+    font-size: 20px;
+}
+
+  .slideshow h2 {
+    font-size: 20px;
+}
+  .rightbtn button{
+    display :flex;
+  }
+  .rightbtn i {
+    display: flex;
+  }
+  .btn1{
+    position: relative;
+    top: 63px;
+    width: 60px;
+    height: 34px;
+    color: black;
+    /* left: 180px; */
+    background-color: #e93b30;
+    font-size: 12px;
+    margin: 0 8px;
+    border: 2px solid white;
+    border-radius: 9px;
+    z-index: 1;
+    padding: 8px 10px;
+    right: 76px;
+    color: white;
+}
+
+   
+
+  
+  .btn1:hover{
+    
+    color :#e93b30;
+}
+  
+  #signup1 {
+    position: absolute;
+    top: 147px;
+    width: 66px;
+    height: 34px;
+    color: black;
+    /* left: 180px; */
+    background-color: #e93b30;
+    font-size: 12px;
+    margin: 0 8px;
+    border: 2px solid white;
+    border-radius: 9px;
+    z-index: 1;
+    padding: 8px 10px;
+    /* right: 141px; */
+    color: white;
+}
+    
+
+.rightbtn a{
+  text-decoration: none;
+}
+
+
+  .cart,
+  .Wishlist,
+  .buy {
+    font-size: 10px;
+    padding: 0px 39px;
+    width: 30%;
+  }
+
+  #dairy,
+  #fruits,
+  #vegetables {
+   top : 88%;
+   font-size: 12px;
+
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+
+  .social-icons {
+    margin-bottom: 12px;
+  }
+  .social-icons a {
+    font-size: 22px;
+}
+.copy-right {
+  font-size: 18px;
+}
+
+  .categories{
+    flex-direction: column;
+
+  }
+  .category img{
+    width: 86vw;
+    height: 63vw;
+    opacity: unset;
+  }
+  .slide-container img{
+    height: 50vw;
+    width: 37vw;
+}
+  }
+@media only screen and (max-width:300px) {
+  header {
+
+    box-shadow: 0px 10px 3px -6px rgba(0, 0, 0, 0.2);
+    /*position: sticky; */
+  }
+
+  .nav {
+    display: flex;
+    /* flex-direction: column; */
+  }
+
+  .left {
+    font-weight: bold;
+    justify-content: center;
+  }
+  .mainmenu.hide-items ul.show {
+    display: none;
+  }
+  .mainmenu.show {
+    display: flex;
+    flex-direction: column;
+  }
+ 
+.left img{
+  width: 158px;
+    height: 87px;
+}
+
+  .center ul {
+    display: none;
+  }
+
+  .center ul li {
+    margin-top: 12px;
+    margin-right: 5px;
+    font-size: 10px;
+  }
+  .center ul li a, .dropdown button {
+    left: 0px;
+   
+}
+.center ul li a {
+  font-size: 12px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.center2 ul li{
+  display :flex;
+}
+.dropdown button {
+  font-size: 17px;
+  margin-bottom: -8px;
+  margin-top: 12px;
+  font-weight: bold;
+}
+  .dropdown {
+    display: none;
+    margin-top: -3px
+  }
+
+  .dropbtn {
+    margin: 3px 7px;
+  }
+
+
+.hamburger {
+  font-size: 25px;
+  cursor: pointer;
+  display: block;
+  margin-left: -6px;
+  z-index: 1;
+  position: unset;
+}
+
+.hamburger span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 7%;
+  background-color: black;
+}
+
+.hamburger span:nth-child(1) {
+  top: 42px;
+}
+
+.hamburger span:nth-child(2),
+.hamburger span:nth-child(3) {
+  top: 47px;
+}
+
+.hamburger span:nth-child(3) {
+  /* top: auto;
+  bottom: 33px; */
+  top: 53px;
+}
+
+.hamburger.drop span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.hamburger.drop span:nth-child(2) {
+  transform: scaleX(0);
+}
+
+.hamburger.drop span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+  .mainmenu {
+    z-index: 1;
+    display: none;
+    position: absolute;
+    top: 12%;
+    left: 0;
+    width: 97%;
+    /* background-color: #857e7e; */
+    background-color: #85e1fb;
+    padding: 7px;
+    transition: right 0.3s ease-in-out;
+    height: 196px;
+  }
+
+  .mainmenu.hide-items ul.show {
+    display: none;
+  }
+
+  .mainmenu.hide-items .center ul {
+    display: none;
+  }
+
+  .mainmenu.hide-items .center ul li {
+    margin-top: 0;
+    margin-right: 5px;
+    font-size: 10px;
+  }
+
+  .mainmenu.hide-items .center ul li a,
+  .mainmenu.hide-items .dropdown button {
+    left: 0;
+  }
+
+  .mainmenu.hide-items .dropdown {
+    display: none;
+    margin-top: -3px;
+  }
+  .dropdown-content {
+    min-width: 282px;
+      
+   }
+  .right {
+    display: flex;
+    /* flex-direction: column; */
+  }
+
+  .right i {
+   display: none;
+
+  }
+  .rightsecpic img {
+    width: 49vw;
+    position: absolute;
+    left: 15%;
+    top: -4%;
+    border-radius: 12px;
+    position: relative;
+    top: -1%;
+    opacity: 0.3;
+    height: 60vw;
+    display :none;
+    
+}
+
+.content {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+  top: 47%;
+  left: 45%;
+  justify-content: center;
+  padding-top: 20px;
+  width: 42vw;
+  font-weight: unset;
+}
+
+  .show {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .show .dropdown {
+    display: block;
+  }
+  .right button{
+    display: none;
+  }
+  .right i{
+    display: none;
+  }
+
+  .videosec {
+    height: 74vw;
+    position: sticky;
+    background: url("https://img.freepik.com/free-photo/shopping-cart-filled-with-coins-copy-space-background_23-2148305919.jpg?w=996&t=st=1687009066~exp=1687009666~hmac=1f8bc271d9b966fffa209307faba5483f812cf28b126996d8328330af3c6d84d");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  /* z-index: -1; */
+  }
+
+.img-container img {
+ display :none
+} 
+.searchbar{
+  top :2%;
+  left : 52%;
+}
+.searchbar input{
+  width: 48%;
+  margin-left: -35px;
+  border-radius: 10px;
+}
+.tomato, .milk , .icecream , .choclate, .chips{
+  display :none;
+}
+  .content h2 {
+    font-size: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: unset;
+    width: unset;
+  }
+
+  .purchasing {
+    margin-top: -37px;
+    display: flex;
+  }
+
+  .productss h1 {
+    font-size: 20px;
+}
+
+  .slideshow h2 {
+    font-size: 20px;
+}
+  .rightbtn button{
+    display :flex;
+  }
+  .rightbtn i {
+    display: flex;
+  }
+  .btn1{
+    position: relative;
+    top: 63px;
+    width: 60px;
+    height: 34px;
+    color: black;
+    /* left: 180px; */
+    background-color: #e93b30;
+    font-size: 12px;
+    margin: 0 8px;
+    border: 2px solid white;
+    border-radius: 9px;
+    z-index: 1;
+    padding: 8px 10px;
+    right: 76px;
+    color: white;
+}
+
+   
+
+  
+  .btn1:hover{
+    
+    color :#e93b30;
+}
+  
+  #signup1 {
+    position: absolute;
+    top: 147px;
+    width: 66px;
+    height: 34px;
+    color: black;
+    /* left: 180px; */
+    background-color: #e93b30;
+    font-size: 12px;
+    margin: 0 8px;
+    border: 2px solid white;
+    border-radius: 9px;
+    z-index: 1;
+    padding: 8px 10px;
+    /* right: 141px; */
+    color: white;
+}
+    
+
+.rightbtn a{
+  text-decoration: none;
+}
+
+
+  .cart,
+  .Wishlist,
+  .buy {
+    font-size: 10px;
+    padding: 0px 39px;
+    width: 30%;
+  }
+
+  #dairy,
+  #fruits,
+  #vegetables {
+   top : 88%;
+   font-size: 12px;
+
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+
+  .social-icons {
+    margin-bottom: 12px;
+  }
+  .social-icons a {
+    font-size: 15px;
+}
+.copy-right {
+  font-size: 12px;
+}
+.slideshow{
+  width: 78%;
+}
+  .categories{
+    flex-direction: column;
+
+  }
+  .category img{
+    width: 86vw;
+    height: 63vw;
+    opacity: unset;
+  }
+  .slide-container img{
+    height: 50vw;
+    width: 37vw;
+}
+
+  }
