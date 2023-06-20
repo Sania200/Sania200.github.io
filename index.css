@@ -1044,6 +1044,7 @@ font-size: 20px;
 
   .slideshow h2 {
     font-size: 45px;
+    margin-top: 56px;
   }
   .rightbtn button{
     display :flex;
@@ -1394,8 +1395,14 @@ font-size: 20px;
   }
 
   .slideshow h2 {
-    font-size: 45px;
-  }
+   
+    font-size: 38px;
+    width: 70vw;
+    margin-top: 53px;
+    /* left: 23px; */
+    margin-left: -41px;
+}
+  
   .rightbtn button{
     display :flex;
   }
@@ -1741,8 +1748,15 @@ font-size: 20px;
 }
 
   .slideshow h2 {
-    font-size: 20px;
+    font-size: 22px;
+    width: 75vw;
+    margin-top: 53px;
+    /* left: 23px; */
+    margin-left: -57px;
 }
+
+
+
   .rightbtn button{
     display :flex;
   }
